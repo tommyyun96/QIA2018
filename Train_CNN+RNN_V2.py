@@ -27,6 +27,7 @@ def next_batch(step):
         data_piece = data[step * batch_size:]
     else:
         data_piece = data[step * batch_size:(step + 1) * batch_size]
+    random.shuffe(data_piece)
     Ys_raw = data_piece[:, [-1]]
     Ys = []
     for i in range(len(Ys_raw)):

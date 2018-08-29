@@ -7,7 +7,7 @@ import random
 
 # hyper parameters
 learning_rate = 0.0001
-training_epochs = 100
+training_epochs = 200
 batch_size = 100
 final_output = 7
 
